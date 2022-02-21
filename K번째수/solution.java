@@ -25,3 +25,6 @@ class Solution {
         return answer;
     }
 }
+
+
+//Arrays의 메서드를 썼으면 List 만들 일도 없었다..
