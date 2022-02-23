@@ -1,3 +1,6 @@
+//LocalDate.of(2016, 5, 24).getDayOfWeek().toString().substring(0,3)
+//실제로 날짜를 구할 일이 있다면 위의 코드가 제일 좋다고 생각함
+
 class Solution {
     public String solution(int a, int b) {
         String[] date = {"THU","FRI","SAT","SUN","MON","TUE","WED"};
