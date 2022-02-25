@@ -1,15 +1,3 @@
-package com.example;
-
-// 1 2 3
-// 4 5 6
-// 7 8 9
-// * 0 #
-
-// (0,0) (0,1) (0,2)
-// (1,0) (1,1) (1,2)
-// (2,0) (2,1) (2,2)
-// (3,0) (3,1) (3,2)
-
 enum KeyNumber {
     ZERO("31"),
     ONE("00"),
@@ -33,12 +21,8 @@ enum KeyNumber {
     }
 }
 
-public class App 
-{
-    public static void main( String[] args )
-    {
-        int[] numbers = {1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5};
-        String hand = "right";
+class Solution {
+    public String solution(int[] numbers, String hand) {
         String left = "30";
         String right = "32";
 
@@ -87,7 +71,7 @@ public class App
             }
             answer += finger;
         }
-        System.out.println(answer);
+        return answer;
     }
 
     public static String getMoveResult(String[] number, String[] left, String[] right, String hand) {
@@ -101,19 +85,8 @@ public class App
         int resultLeft = Math.abs(number1 - left1) + Math.abs(number2 - left2);
         int resultRight = Math.abs(number1 - right1) + Math.abs(number2 - right2);
 
-        System.out.println(resultLeft + " " + resultRight);
-        
         if(resultLeft == resultRight) return hand;
 
         return resultLeft > resultRight ? "R":"L";
     }
-    /**
-        2580은 왼손 오른손 위치랑 숫자 위치랑 비교해서 가까운걸 뽑아내야한다 return finger;
-        if(finger.equals("R")) {
-            right = number;
-        } else {
-            left = number;
-        }
-        answer += finger;
-     */
 }
