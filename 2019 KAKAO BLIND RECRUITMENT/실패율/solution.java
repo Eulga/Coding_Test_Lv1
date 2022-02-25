@@ -3,7 +3,7 @@ import java.util.Map.*;
 
 // 와 진짜 너무 어려웠다
 // 0/0 이 왜 0이 아니라 NaN 이냐고
-// (N > stages안의 최대값) 이 조건 아는데도 한 30분 걸린듯
+// (N > stages안의 최대값) 이 조건 알아 차리는데 한 30분 걸린듯
 
 class Solution {
     public int[] solution(int N, int[] stages) {
